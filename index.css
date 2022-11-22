@@ -1,0 +1,261 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    width: 600px;
+    font-family: 'Smythe', cursive;
+    max-width: 1280px;
+    margin: auto;
+
+    background-color: #F5F5F5;
+}
+
+header {
+    background-image: url("images/bg.jpg");
+    background-size: cover;
+    color: whitesmoke;
+    height: 167px;
+    background-position: 0px 250px;
+}
+
+.header-text {
+    margin-left: 2.875em;
+    margin-top: 2.875em;
+    display: inline-block;
+}
+
+.restaurant-name {
+    margin: 0px;
+    font-size: 2.43rem;
+}
+
+.tag-line {
+    margin: 0px;
+    font-size: 1.37rem;
+}
+
+/* menu item cards */
+
+.container {
+    width: 100%;
+    margin: 0px auto;
+}
+
+.item-card {
+    width: 508px;
+    height: 140px;
+    border-bottom: 1px solid #D2D2D2;
+    margin: 2.8em auto 0px;
+    display: flex;
+
+    /* justify-content: center; */
+}
+
+.item-object {
+    display: inline-block;
+}
+
+.item-pic p,
+.text-container p {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* item picture  */
+.emoji {
+    font-size: 5em;
+    opacity: 0.72;
+}
+
+.text-container {
+    width: 358px;
+    margin-left: 2em;
+}
+
+.text-container .name,
+.name,
+.modal-title {
+    font-size: 1.75rem;
+    /* 24px */
+}
+
+.modal-title {
+    padding-bottom: 2.58rem;
+}
+
+.text-container .ingredients {
+    font-size: 1rem;
+    padding-bottom: 0.5em;
+    color: #8B8B8B;
+}
+
+.price {
+    font-size: 1.5rem;
+}
+
+
+.add-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #DEDEDE;
+    background-color: white;
+    font-size: 32px;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+
+/* order modal */
+.centered {
+    text-align: center;
+    margin: 0px auto;
+}
+
+.order-summary-modal {
+    width: 508px;
+    margin: 45px auto 64px;
+
+}
+
+.remove-btn {
+    margin-left: 0.8rem;
+    font-size: 0.75rem;
+    color: #BBBBBB;
+    font-family: 'Verdana';
+    cursor: pointer;
+}
+
+/* menu items displayed in order modal*/
+
+.order-item,
+.total-price-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* total price container */
+
+.total-price-container {
+    border-top: 2px solid black;
+    padding-top: 0.875em;
+    padding-bottom: 3.3em;
+}
+
+.total-price-container p,
+.order-item p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.order-item p {
+    padding-bottom: 0.81rem;
+}
+
+
+/* order button */
+
+.btn-primary {
+    width: 508px;
+    height: 60px;
+    background: #16DB99;
+    color: white;
+    font-weight: 700;
+    font-family: 'Verdana';
+    border: none;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* check out page */
+
+.payment-modal {
+    width: 524px;
+    height: 524px;
+    background-color: #FFFFFF;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    margin: auto;
+    box-shadow: 0px 0px 150px 2px grey;
+}
+
+input {
+    display: block;
+    width: 475.91px;
+    height: 71.3px;
+    margin: 0px auto 1.43em;
+    font-family: 'Verdana';
+}
+
+input[type=text] {
+    padding-left: 1.625rem;
+}
+
+input[type=number] {
+    padding-left: 1.625rem;
+}
+
+input[type=password] {
+    padding-left: 1.625rem;
+}
+
+
+input:hover,
+input:focus {
+    border: 2px solid orange;
+    background-color: whitesmoke;
+}
+
+.payment-modal h1 {
+    font-family: 'Verdana';
+    font-size: 1.5em;
+    margin: 2.875rem 0px;
+}
+
+.payment-modal button {
+    margin-top: 1rem;
+    width: 475.91px;
+    height: 71.3px;
+}
+
+.pay-btn:hover,
+.order-btn:hover,
+.add-btn:hover {
+    color: white;
+    background-color: orange;
+    cursor: pointer;
+}
+
+
+/* thank you modal */
+
+.thank-you-modal {
+    margin: 2.8rem auto 50px;
+    width: 504px;
+    height: 120px;
+    background-color: #ECFDF5;
+    border-radius: 3px;
+    text-align: center;
+    display: flex;
+    display: none;
+}
+
+.thank-you-text {
+    width: 379px;
+    color: #065F46;
+    font-family: 'Smythe';
+    font-size: 2rem;
+    margin: auto auto;
+}
