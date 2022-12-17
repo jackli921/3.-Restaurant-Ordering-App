@@ -165,7 +165,8 @@ function handleAddBtn(itemId){
         beerPriceCount += targetItem.price
         document.getElementById('beer-price').innerHTML = "$"+`${beerPriceCount}`
     }
-     
+    
+    
     totalPrice += targetItem.price
     document.getElementById('total-price').innerHTML = "$"+`${totalPrice}`
        
