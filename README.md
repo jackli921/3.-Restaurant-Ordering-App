@@ -1,11 +1,11 @@
 # Mobile Ordering App
-a simple  four-stage restaurant app featuring three items 
+a simple  four-stage restaurant app featuring three items [Try it here](https://gilded-hamster-419458.netlify.app/)
 - default menu state (view menu, add or delete order
 - pre-check-out state (view sub-total, total)
 - payment-modal state (adds credit card information)
 - order-complete state (confirmation thank you message)
 
-[Try it here](https://gilded-hamster-419458.netlify.app/)
+
 
 ## Intro
 A training project built to consolidate key concepts I learned from:
